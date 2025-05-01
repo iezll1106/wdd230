@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e5c88;
+    padding: 20px; /* Increase padding for better spacing */
+    margin: 1rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px; /* Use margin-top for positioning */
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    cursor: pointer;
+}
+
+h1 {
+    display: inline-block;
+    color: whitesmoke;
+    position: relative;
+    top: -10px;
+}
+
+nav {
+    background-color: #3e5c88;
+    margin: 1rem;
+}
+
+#myButton::before {
+    content: "=";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .5rem 2vw; 
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 1rem 2vw; 
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul.menuLinks {
+    list-style-type: none; 
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 254, 254, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Apply styles to the hero section */
+#hero {
+    text-align: center;
+    padding: 20px;
+}
+
+#hero-box {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Apply styles to the card sections */
+.card {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#spotlightBanner {
+    margin-top: 30px;
+}
+
+button#closeSpotlightBanner {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #3e5c88;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: 15px;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode body {
+    color: black;
+}
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode ul.menuLinks li a {
+    color: #fff;
+}
+
+.dark-mode .card {
+    border-color: black;
+    background-color: #1a1a1a;
+}
+
+.dark-mode h3,
+.dark-mode h1,
+.dark-mode footer {
+    background-color: rgb(245, 237, 226);
+    color: black;
+}
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x";
+}
+
+ul.open.menuLinks {
+    display: block;
+}

@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e5c88;
+    padding: 20px; /* Increase padding for better spacing */
+    margin: 1rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px; /* Use margin-top for positioning */
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    cursor: pointer;
+}
+
+h1 {
+    display: inline-block;
+    color: whitesmoke;
+    position: relative;
+    top: -10px;
+}
+
+nav {
+    background-color: #3e5c88;
+    margin: 1rem;
+}
+
+#myButton::before {
+    content: "=";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .5rem 2vw; 
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 1rem 2vw; 
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul.menuLinks {
+    list-style-type: none; 
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button#grid, button#list {
+    margin-bottom: 10px;
+}
+
+/* Grid view styles */
+div#members {
+    list-style: none;
+    padding: 0;
+    display: grid; /* Change to grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width */
+    grid-gap: 1rem;
+}
+
+.member-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners for card appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
+    text-align: center;
+}
+
+.member-item h2 {
+    margin-top: 0;
+}
+
+.member-item p {
+    margin: 5px 0;
+}
+
+.member-item a {
+    text-decoration: none;
+    color: blue;
+}
+
+.member-item a:hover {
+    text-decoration: underline;
+}
+
+.member-item img {
+    width: 150px; /* Adjusted image width to fit card */
+    height: auto;
+    border-radius: 6px; /* Rounded corners for image */
+}
+  
+/* List view styles */
+.list-container {
+    list-style: none;
+    padding: 0;
+    display: grid; /* Change to grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width */
+    grid-gap: 1rem;
+}
+
+.list-container li {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9; /* Zebra striping background color */
+}
+
+.list-container li:nth-child(even) {
+    background-color: #fff; /* Alternate background color for zebra striping */
+}
+
+.list-container li:last-child {
+    border-bottom: none;
+}
+
+.list-container h2 {
+    margin-top: 0;
+}
+
+.list-container p {
+    margin: 5px 0;
+}
+
+.list-container a {
+    text-decoration: none;
+    color: blue;
+}
+
+.list-container a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #3e5c88;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: 15px;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode body {
+    color: black;
+}
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode ul.menuLinks li a {
+    color: #fff;
+}
+
+.dark-mode .card {
+    border-color: black;
+    background-color: #1a1a1a
+}
+
+.dark-mode h3,
+.dark-mode h1,
+.dark-mode footer {
+    background-color: rgb(245, 237, 226);
+    color: black;
+}
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x";
+}
+
+ul.open.menuLinks {
+    display: block;
+}

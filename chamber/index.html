@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guimaras Chamber of Commerce</title>
+    <meta name="description" content="Guimaras Chamber of Commerce">
+    <meta name="author" content="[Liezl G. Lizardo]">
+    <meta property="og:title" content="Guimaras Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
+    <meta property="og:url" content="https://liezl76.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/logo.png" alt="logo">
+            <h1>Guimaras Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/bikers-hill.webp" alt="home province">
+            </div>
+
+            <!-- Current Events Section -->
+            <div class="container">
+                <section class="card">
+                    <h2>Events</h2>
+                    <h3>Week 04: Annual Chamber Meeting</h3>
+                    <p>Date: January 25, 2024</p>
+                    <p>Time: 6:00 PM - 8:00 PM</p>
+                    <p>Location: Chamber Headquarters</p>
+                </section>
+
+            <!-- Weather Card Section -->
+            <section class="card">
+                <h2>Weather</h2>
+                <p>The current temperature in Guimaras, Philippines is <span id="current-temp"></span></p>
+                <p>Weather Description: <span id="weather-description"></span></p>
+                <h3>Three Day Forecast</h3>
+                <div id="forecast" class="forecast-container">
+                <!-- Forecast items will be dynamically added here -->
+            </div>
+            </section>
+        </div>
+        <!-- Company Spotlight Card Section -->
+        <div class="spotlight-container">
+            <!-- Spotlight Ads Section -->
+            <section class="card" id="spotlight-ads-section">
+                <h3>Spotlight Ads</h3>
+                <!-- Spotlight ads will be dynamically added here -->
+            </section>
+        </div>
+        <!-- Banner -->
+        <div id="spotlightBanner">
+            <p>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button id="closeSpotlightBanner">Close</button>
+        </div>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <p><img src="images/logo.png" alt="logo"> Guimaras Chamber of Commerce | </p>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | WDD 230 Project |  <img src="images/philippines.jpg" alt="Philippines Flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript for dynamic content -->
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageCounter.js"></script>
+    <script src="scripts/spotlightads.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlightbanner.js"></script>
+</body>
+</html>
