@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/profile.png" alt="Liezl Lizardo Profile">
+            <h1 class="headname">Liezl G. Lizardo</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <li><a href="https://liezl76.github.io/wdd230/chamber/">Chamber</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="formmessage"></div>
+        <h1>Contact Us</h1>
+        <form id="contactForm" method="get" onsubmit="return validateForm()">
+            <p class="smaller">*️⃣ Indicates a required field</p>
+
+            <label for="username" class="top">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Please enter your Username">
+
+            <label for="password" class="top">Your Password</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required placeholder="At least eight alpha-numeric characters only.">
+
+            <label for="password2" class="top">Re-enter Your Password</label>
+            <input type="password" id="password2" name="password2" required>
+
+            <label for="email" class="top">Email Address</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please enter a valid email address">
+
+            <label for="pagerating">Page Rating</label>
+            <input type="range" id="pagerating" name="pagerating" min="1" max="10" step="1" value="5">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageCounter.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+</html>

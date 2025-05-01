@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liezl G. Lizardo - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Liezl G. Lizardo | Section B4">
+    <meta name="author" content="[Liezl G. Lizardo]">
+    <meta property="og:title" content="Liezl G. Lizardo - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.hodgepodgelifestyle.com/wp-content/uploads/2022/08/81678253_10157100202723657_7925778690640707584_n.jpg">
+    <meta property="og:url" content="https://liezl76.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/dark.svg" id="mode" alt="dark mode">
+        </div>
+        <div>
+            <img src="images/profile.png" alt="Liezl Lizardo Profile">
+            <h1>Liezl G. Lizardo</h1>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <li><a href="https://liezl76.github.io/wdd230/chamber/">Chamber</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width:500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width:1000px)">
+                <img src="images/hero-large.webp" alt="hero images" width="500" height="250">
+            </picture>
+            <span>Cebu Philipines Temple</span>
+        </div>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="container">
+            <section class="card">
+                <h3>Learning Activities</h3>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                    <p>The current temperature in Guimaras, Philippines is <span id="current-temp"></span></p>
+                    <figure>
+                    <img id="weather-icon" src="img" alt="desc">
+                    <figcaption></figcaption>
+                    </figure>
+                <p><span class="label">Number of Visits:</span><span class="visits"></span></p>
+            </section>
+        </div>
+    </main>
+    <figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d149248.13385775348!2d122.59884682958854!3d10.583520347956592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1706168745830!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </figure>
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Liezl G. Lizardo | <img src="images/philippines.jpg" alt="Philippines Flag"> </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageCounter.js"></script>
+    <script src="scripts/links.js"></script>
+
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=&loading=async&callback=initMap">
+    </script>
+</body>
+</html>
